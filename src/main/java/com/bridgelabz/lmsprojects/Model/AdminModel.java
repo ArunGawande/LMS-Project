@@ -2,10 +2,7 @@ package com.bridgelabz.lmsprojects.Model;
 
 import java.time.LocalDateTime;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -14,6 +11,7 @@ import com.bridgelabz.lmsprojects.Dto.AdminDto;
 import lombok.Data;
 
 @Entity
+@Table(name = "AdminModel")
 @Data
 public class AdminModel {
 	@Id
